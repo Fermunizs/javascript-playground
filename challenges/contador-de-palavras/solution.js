@@ -11,7 +11,7 @@ const palavras = frase.split(" ");
 console.log(palavras);
 
 for (const palavra of palavras) {
-  if (Object.hasOwn(contador, palavra) === false) {
+  if (!Object.hasOwn(contador, palavra)) {
     contador[palavra] = 1;
   } else {
     contador[palavra] += 1;
