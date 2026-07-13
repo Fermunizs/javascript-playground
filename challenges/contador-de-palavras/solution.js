@@ -2,6 +2,7 @@ const frase =
   "Este é um exercício de lógica com JavaScript , JavaScript é uma excelente linguagem!"
     .toLowerCase()
     .replace(/[,!]/g, "")
+    .replace(/\s+/g, " ")
     .trim();
 
 const contador = {};
